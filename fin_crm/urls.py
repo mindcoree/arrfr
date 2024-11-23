@@ -21,4 +21,5 @@ from django.contrib.auth import views as auth_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('crm.urls')),
+    path('api/analytics/', include('demographic_analytics.urls')),
 ]
